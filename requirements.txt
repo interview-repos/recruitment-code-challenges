@@ -1,0 +1,8 @@
+fastapi[standard]==0.116.0
+passlib[bcrypt]==1.7.4
+pydantic==2.11.7
+pydantic-settings==2.10.1
+PyJWT==2.8.0
+pytest==7.4.0
+python-dotenv==1.0.0
+SQLAlchemy==2.0.41

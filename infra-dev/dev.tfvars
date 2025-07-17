@@ -1,0 +1,6 @@
+location              = "East US"
+resource_group_name   = "rg-dev"
+storage_account_name  = "funcstoragedev"
+environment           = "dev"
+app_service_plan_name = "app-service-plan-dev"
+function_app_name     = "myfunc-dev"
