@@ -22,7 +22,7 @@ resource "azurerm_storage_blob" "function_package" {
   storage_account_name   = azurerm_storage_account.sa.name
   storage_container_name = azurerm_storage_container.function_code.name
   type                   = "Block"
-  source                 = "path/to/functionapp.zip" # We should variablise this?
+  source                 = "path/to/functionapp.zip"
 }
 
 resource "azurerm_service_plan" "plan" {
@@ -30,7 +30,7 @@ resource "azurerm_service_plan" "plan" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux"
-  sku_name            = "Y1" #The os_type/sku_name should be variablised
+  sku_name            = "Y1"
 }
 
 resource "azurerm_linux_function_app" "app" {
@@ -44,7 +44,7 @@ resource "azurerm_linux_function_app" "app" {
 
   site_config {
     application_stack {
-      python_version = "3.10" #same as this?
+      python_version = "3.10"
     }
   }
 
